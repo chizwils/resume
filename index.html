@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+
+<head>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Compiled and minified CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:300,400&display=swap" rel="stylesheet">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.btn1').click(function() {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollLeft: "+=1200"
+				}, "slow");
+			});
+		});
+	</script>
+
+	<link rel='stylesheet' href="assets/css/style.css" />
+	<title>Brand-new</title>
+</head>
+
+<body>
+	<div class='wrap'>
+		<div class="wrapper grid">
+			<div class="box intro-section card section" id="1">
+				<div>
+					<h1>Hey, I'm <span>Chizaram Chinedu</span>. I'm a design-minded FullStack Developer focused on building beautiful interfaces and experiences</h1>
+				</div>
+
+				<button class="btn btn1" href='#2'>NEXT</button>
+			</div>
+
+			<div class="box skill-section card section" id="2">
+				<h2>Skill Set</h2>
+				<div class="container">
+
+					<div class="bar learning" data-skill="TDD"></div>
+					<div class="bar back basic" data-skill="Python"></div>
+					<div class="bar back intermediate" data-skill="Javascript"></div>
+					<div class="bar front advanced" data-skill="CSS3"></div>
+					<div class="bar front expert" data-skill="HTML5"></div>
+
+				</div>
+				<div>
+					<h2> Frameworks</h2>
+					<ul>
+						<li><a class='btn-flat '>Materializze</a></li>
+						<li><a class='btn-flat '>Materializze</a></li>
+						<li><a class='btn-flat '>Materializze</a></li>
+						<li><a class='btn-flat '>Materializze</a></li>
+						<li><a class='btn-flat '>Materializze</a></li>
+						<li><a class='btn-flat '>Materializze</a></li>
+						<li><a class='btn-flat '>Materializze</a></li>
+					</ul>
+				</div>
+				<button class="btn btn1" href='#2'>NEXT</button>
+			</div>
+
+			<div class="box education card section" id='3'>
+				<h1>EDUCATION</h1><a class="btn " href="#4">NEXT</a>
+			</div>
+			<div class="box projects-section card  section" id='4'>
+				<h1>PROJECTS</h1><a href='#5' class="btn btn1 ">NEXT</a>
+			</div>
+			<div class="box contact-section card section " id='5'>
+				<h1>CONTACT</h1><a href="#1" class="btn ">NEXT</a>
+			</div>
+
+
+
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body{
+	min-height: 100vh;
+	padding: 10px;
+	background-color: lightgray;
+	font-family: 'Open Sans', sans-serif;
+	
+}html,body{
+	
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+.box{
+	width: 90vw;
+	height: 90vh; 
+	background-color: white;
+	position: relative;
+	padding: 20px;
+	
+	
+}
+h1{
+	position:absolute;
+	font-family: 'Crimson Text', serif;
+}
+h2{
+	font-family: 'Crimson Text', serif;
+	font-size: 30px;
+	letter-spacing: 3px
+}
+.btn{
+	position: absolute;
+	bottom:5%;
+	right: 5%;
+	border-radius: 100%;
+		
+}
+
+/****SKILLS******/
+.skill-section ul li{
+	display: inline-block;
+	margin: 10px;
+}
+.btn-flat{
+	border: 1px solid blue!important;
+	border-radius: 30px;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #;
+  padding: 2px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #fff;
+	letter-spacing: 1px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #f3ac13;
+}
+.bar.back::before{
+  background-color: #0ebedf;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
